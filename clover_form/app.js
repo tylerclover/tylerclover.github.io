@@ -3,12 +3,7 @@ function restoreForm(form_name) {
 		data = sessionStorage.getItem(form_name)
 		
 		$.each(data.split('&'), function (index, elem) {
-		   var vals = elem.split('=');		   
-		   //console.log(elem)
-		   console.log(vals[0])
-		   console.log(vals[1])
-		   console.log($("[name='" + vals[0] + "'][value='" + vals[1] + "']").attr("type"))
-		   
+		   var vals = elem.split('=');		   		   
 		   if(	$("[name='" + vals[0] + "'][value='" + vals[1] + "']").attr("type") == "radio" | 
 				$("[name='" + vals[0] + "'][value='" + vals[1] + "']").attr("type") == "checkbox"
 				){
@@ -40,5 +35,3 @@ function next(loc, form_name) {
 	  window.location = loc  
 	});
 }
-
-function check_type()
