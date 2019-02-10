@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha256-NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.cloverhealth.com/assets/bundles/app_css.0afa50ee6e0464f22218.css">
+</head>
+<body>
+
+<div class="container">
+<div class="enrollment__header">
+<h1 class="h1 text-center">Enroll with Clover</h1>
+<div class="step-indicator">
+<ol class="step-indicator__list">
+<li class="
+        step-indicator__item
+        
+          step-indicator__item--done
+        
+      ">
+<div class="step-indicator__number">
+<span class="fa fa-check"></span>
+</div>
+<div class="step-indicator__name">Eligibility</div>
+</li>
+<li class="
+        step-indicator__item
+        
+          step-indicator__item--done
+        
+      ">
+<div class="step-indicator__number">
+<span class="fa fa-check"></span>
+</div>
+<div class="step-indicator__name">Basic info</div>
+</li>
+<li class="
+        step-indicator__item
+        
+          step-indicator__item--done
+        
+      ">
+<div class="step-indicator__number">
+<span class="fa fa-check"></span>
+</div>
+<div class="step-indicator__name">Contact</div>
+</li>
+<li class="
+        step-indicator__item
+        
+          step-indicator__item--active
+        
+      ">
+<div class="step-indicator__number">
+4
+</div>
+<div class="step-indicator__name">Medicare</div>
+</li>
+<li class="
+        step-indicator__item
+        
+      ">
+<div class="step-indicator__number">
+5
+</div>
+<div class="step-indicator__name">Payment</div>
+</li>
+<li class="
+        step-indicator__item
+        
+      ">
+<div class="step-indicator__number">
+6
+</div>
+<div class="step-indicator__name">Read &amp; sign</div>
+</li>
+<li class="
+        step-indicator__item
+        
+      ">
+<div class="step-indicator__number">
+7
+</div>
+<div class="step-indicator__name">Review</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="enrollment__content">
+<form action="" method="post" novalidate="">
+<input type="hidden" name="csrfmiddlewaretoken" value="40imt95ywXVQhneUcqD8R1hcUViYKqEcc0rEbyZ4tAunGr7zbWoBWbZ0zNaS3PhJ">
+<input type="hidden" name="enrollment_form_wizard_view-current_step" value="medical-long" id="id_enrollment_form_wizard_view-current_step">
+<input type="hidden" name="enrollment-plan_info" data-plan-year="2019" data-plan-state="NJ">
+<div class="enrollment__form-order">
+<div>
+<h2 class="h2">Tell us about your Medicare plan</h2>
+<hr>
+<h3 class="h3">
+<span class="enrollment__header-icon fa-stack">
+<span class="fa fa-circle fa-stack-2x"></span>
+<span class="fa fa-medkit fa-stack-1x fa-inverse"></span>
+</span>
+Medicare Information
+</h3>
+Please take out your red, white and blue Medicare card to complete this section.
+<ul>
+<li>Fill out this information as it appears on your Medicare card.</li>
+<em>Or</em>
+<li>Attach a copy of your Medicare card or your letter from Social Security or the Railroad Retirement Board.</li>
+</ul>
+<div class="enrollment__info-banner">
+<span class="enrollment__info-banner-icon fa fa-info-circle"></span>
+<div class="enrollment__info-banner-content">
+<p>
+You must have Medicare Part A and Part B to join a Medicare Advantage Plan.
+</p>
+</div>
+</div>
+<div class="enrollment__field__medicare-full-name enrollment__field-one">
+<div class="form-group type-TextInput medical-long-medicare_card_name-wrapper ">
+<label for="id_medical-long-medicare_card_name" class="control-label">Name (as it appears on your Medicare card)</label>
+<input type="text" name="medical-long-medicare_card_name" maxlength="255" class="form-control" aria-describedby="id_medical-long-medicare_card_name__errors id_medical-long-medicare_card_name__help-text" required="" id="id_medical-long-medicare_card_name" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+</div>
+</div>
+<div class="enrollment__field__medicare-num enrollment__field-one">
+<div class="form-group type-TextInput medical-long-medicare_claim_number-wrapper ">
+<label for="id_medical-long-medicare_claim_number" class="control-label">Medicare number</label>
+<input type="text" name="medical-long-medicare_claim_number" maxlength="255" class="form-control" aria-describedby="id_medical-long-medicare_claim_number__errors id_medical-long-medicare_claim_number__help-text" required="" id="id_medical-long-medicare_claim_number">
+</div>
+</div>
+<h2 class="h4">Is entitled to</h2>
+<div class="enrollment__field__effective-dates enrollment__field-one">
+<div class="form-group type-TextInput medical-long-part_a_effective_date-wrapper ">
+<label for="id_medical-long-part_a_effective_date" class="control-label">Hospital (Part A) effective date</label>
+<input name="medical-long-part_a_effective_date" class="enrollment__datepicker form-control flatpickr-input" placeholder="MM/DD/YYYY" data-date-start-date="01/01/1919" data-date-end-date="12/31/2021" aria-describedby="id_medical-long-part_a_effective_date__errors id_medical-long-part_a_effective_date__help-text" required="" id="id_medical-long-part_a_effective_date">
+</div>
+<div class="form-group type-TextInput medical-long-part_b_effective_date-wrapper ">
+<label for="id_medical-long-part_b_effective_date" class="control-label">Medicare (Part B) effective date</label>
+<input name="medical-long-part_b_effective_date" class="enrollment__datepicker form-control flatpickr-input" placeholder="MM/DD/YYYY" data-date-start-date="01/01/1919" data-date-end-date="12/31/2021" aria-describedby="id_medical-long-part_b_effective_date__errors id_medical-long-part_b_effective_date__help-text" required="" id="id_medical-long-part_b_effective_date">
+</div>
+</div>
+<h3 class="h3">
+<span class="enrollment__header-icon fa-stack">
+<span class="fa fa-circle fa-stack-2x"></span>
+<span class="fa fa-user-md fa-stack-1x fa-inverse"></span>
+</span>
+Physician selection
+</h3>
+<div class="enrollment__info-banner">
+<span class="enrollment__info-banner-icon fa fa-info-circle"></span>
+<div class="enrollment__info-banner-content">
+<p>
+Please note that out-of-network / non-contracted providers are under no obligation to treat Clover members, except in emergency situations.
+</p>
+</div>
+</div>
+Please choose the name of a Primary Care Physician (PCP), clinic, or health center:
+<div class="enrollment__field__primary-care-name enrollment__field-one">
+<div class="form-group type-TextInput medical-long-primary_care_name-wrapper ">
+<label for="id_medical-long-primary_care_name" class="control-label">Name</label>
+<input type="text" name="medical-long-primary_care_name" maxlength="255" class="form-control" aria-describedby="id_medical-long-primary_care_name__errors id_medical-long-primary_care_name__help-text" id="id_medical-long-primary_care_name">
+</div>
+</div>
+<div class="enrollment__field__primary-care-address enrollment__field-one">
+<div class="form-group type-TextInput medical-long-primary_care_address_one-wrapper ">
+<label for="id_medical-long-primary_care_address_one" class="control-label">Address</label>
+<input type="text" name="medical-long-primary_care_address_one" maxlength="255" class="form-control" aria-describedby="id_medical-long-primary_care_address_one__errors id_medical-long-primary_care_address_one__help-text" id="id_medical-long-primary_care_address_one">
+</div>
+</div>
+<div class="enrollment__field__primary-care-city-state-zip enrollment__field-fill">
+<div class="enrollment__field__primary-care-city">
+<div class="form-group type-TextInput medical-long-primary_care_city-wrapper ">
+<label for="id_medical-long-primary_care_city" class="control-label">City</label>
+<input type="text" name="medical-long-primary_care_city" maxlength="255" class="form-control" aria-describedby="id_medical-long-primary_care_city__errors id_medical-long-primary_care_city__help-text" id="id_medical-long-primary_care_city">
+</div>
+</div>
+<div class="enrollment__field__primary-care-state">
+<div class="form-group type-Select medical-long-primary_care_state-wrapper ">
+<label for="id_medical-long-primary_care_state" class="control-label">State</label>
+<select name="medical-long-primary_care_state" class="form-control" aria-describedby="id_medical-long-primary_care_state__errors id_medical-long-primary_care_state__help-text" id="id_medical-long-primary_care_state">
+<option value="" selected="">Select state</option>
+<option value="AK">AK</option>
+<option value="AL">AL</option>
+<option value="AR">AR</option>
+<option value="AZ">AZ</option>
+<option value="CA">CA</option>
+<option value="CO">CO</option>
+<option value="CT">CT</option>
+<option value="DC">DC</option>
+<option value="DE">DE</option>
+<option value="FL">FL</option>
+<option value="GA">GA</option>
+<option value="HI">HI</option>
+<option value="IA">IA</option>
+<option value="ID">ID</option>
+<option value="IL">IL</option>
+<option value="IN">IN</option>
+<option value="KS">KS</option>
+<option value="KY">KY</option>
+<option value="LA">LA</option>
+<option value="MA">MA</option>
+<option value="MD">MD</option>
+<option value="ME">ME</option>
+<option value="MI">MI</option>
+<option value="MN">MN</option>
+<option value="MO">MO</option>
+<option value="MS">MS</option>
+<option value="MT">MT</option>
+<option value="NC">NC</option>
+<option value="ND">ND</option>
+<option value="NE">NE</option>
+<option value="NH">NH</option>
+<option value="NJ">NJ</option>
+<option value="NM">NM</option>
+<option value="NV">NV</option>
+<option value="NY">NY</option>
+<option value="OH">OH</option>
+<option value="OK">OK</option>
+<option value="OR">OR</option>
+<option value="PA">PA</option>
+<option value="RI">RI</option>
+<option value="SC">SC</option>
+<option value="SD">SD</option>
+<option value="TN">TN</option>
+<option value="TX">TX</option>
+<option value="UT">UT</option>
+<option value="VA">VA</option>
+<option value="VT">VT</option>
+<option value="WA">WA</option>
+<option value="WI">WI</option>
+<option value="WV">WV</option>
+<option value="WY">WY</option>
+</select>
+</div>
+</div>
+<div class="enrollment__field__primary-care-zip">
+<div class="form-group type-TextInput medical-long-primary_care_zip_code-wrapper ">
+<label for="id_medical-long-primary_care_zip_code" class="control-label">ZIP code</label>
+<input type="text" name="medical-long-primary_care_zip_code" maxlength="10" class="form-control" aria-describedby="id_medical-long-primary_care_zip_code__errors id_medical-long-primary_care_zip_code__help-text" id="id_medical-long-primary_care_zip_code">
+</div>
+</div>
+</div>
+<div class="enrollment__field__primary-care-phone-num enrollment__field-one">
+<div class="form-group type-TextInput medical-long-primary_care_phone-wrapper ">
+<label for="id_medical-long-primary_care_phone" class="control-label">Phone</label>
+<input type="text" name="medical-long-primary_care_phone" placeholder="555-555-5555" maxlength="20" class="form-control" aria-describedby="id_medical-long-primary_care_phone__errors id_medical-long-primary_care_phone__help-text" id="id_medical-long-primary_care_phone">
+</div>
+</div>
+<hr>
+<div class="choice__list">
+<div class="form-group type-CheckboxInput medical-long-primary_care_none-wrapper  form-inline">
+<label for="id_medical-long-primary_care_none" class="choice">
+<input type="checkbox" name="medical-long-primary_care_none" class="choice__input choice__input--checkbox" aria-describedby="id_medical-long-primary_care_none__errors id_medical-long-primary_care_none__help-text" id="id_medical-long-primary_care_none" value="on">
+<div class="choice__button" role="checkbox"></div>
+<span class="choice__label">I don't have a primary care physician, clinic, or health care center.</span>
+</label>
+</div>
+<div class="form-group type-CheckboxInput medical-long-primary_care_do_not_know-wrapper  form-inline">
+<label for="id_medical-long-primary_care_do_not_know" class="choice">
+<input type="checkbox" name="medical-long-primary_care_do_not_know" class="choice__input choice__input--checkbox" aria-describedby="id_medical-long-primary_care_do_not_know__errors id_medical-long-primary_care_do_not_know__help-text" id="id_medical-long-primary_care_do_not_know" value="on">
+<div class="choice__button" role="checkbox"></div>
+<span class="choice__label">I don't know.</span>
+</label>
+</div>
+</div>
+<h3 class="h3">
+<span class="enrollment__header-icon fa-stack">
+<span class="fa fa-circle fa-stack-2x"></span>
+<span class="fa fa-plus fa-stack-1x fa-inverse"></span>
+</span>
+Additional questions
+</h3>
+<p>
+</p>
+<div class="enrollment__field__esrd enrollment__field-one">
+<div class="form-group type-RadioSelect medical-long-esrd-wrapper ">
+<fieldset aria-describedby="id_medical-long-esrd_0__help-text">
+<legend class="enrollment__label control-label">
+Do you have End Stage Renal Disease (ESRD)?
+</legend>
+<p id="id_medical-long-esrd_0__help-text" class="
+    enrollment__help
+     enrollment__help--intro 
+  ">If you had a successful kidney transplant and/or do not need regular dialysis anymore, please send a note or records from the enrollree's doctor to the address below. Otherwise, Clover may need to contact you to obtain additional information.</p>
+<div class="
+              choice__list
+              
+                choice__list--short
+              
+            ">
+<label for="id_medical-long-esrd_2" class="choice">
+<input class="choice__input choice__input--radio" type="radio" name="medical-long-esrd" id="id_medical-long-esrd_2" value="True" aria-describedby="id_medical-long-esrd_0__errors">
+<div class="choice__button" role="radio"></div>
+<span class="choice__label">Yes</span>
+</label>
+<label for="id_medical-long-esrd_3" class="choice">
+<input class="choice__input choice__input--radio" type="radio" name="medical-long-esrd" id="id_medical-long-esrd_3" value="False" aria-describedby="id_medical-long-esrd_0__errors">
+<div class="choice__button" role="radio"></div>
+<span class="choice__label">No</span>
+</label>
+</div>
+</fieldset>
+</div>
+</div>
+<div data-conditional-field-name="medical-long-esrd" data-conditional-field-value="true" hidden="">
+<div class="enrollment__info-banner">
+<span class="enrollment__info-banner-icon fa fa-info-circle"></span>
+<div class="enrollment__info-banner-content">
+<p>
+If you had a successful kidney transplant and/or do not need regular dialysis anymore, please send a note or records from the enrollree's doctor to the address below. Otherwise, Clover may need to contact you to obtain additional information.
+</p>
+<p>
+You may send materials to the following address:
+</p>
+<p>
+Clover Health<br>
+P. O. Box 266650<br>
+Weston, FL 33326
+</p>
+<p>
+Or fax it to 1-866-508-0865
+</p>
+</div>
+</div>
+</div>
+<p>
+</p>
+<div class="enrollment__field__additional-coverage enrollment__field-one">
+<div class="form-group type-RadioSelect medical-long-additional_rx_drug_coverage-wrapper ">
+<fieldset aria-describedby="id_medical-long-additional_rx_drug_coverage_0__help-text">
+<legend class="enrollment__label control-label">
+Will you receive other prescription drug coverage in addition to Clover plans?
+</legend>
+<p id="id_medical-long-additional_rx_drug_coverage_0__help-text" class="
+    enrollment__help
+     enrollment__help--intro 
+  ">Some individuals may have additional prescription drug coverage, including other private insurance, TRICARE, Federal employee health benefits, VA benefits, or State Pharmaceutical Assistance Programs.</p>
+<div class="
+              choice__list
+              
+                choice__list--short
+              
+            ">
+<label for="id_medical-long-additional_rx_drug_coverage_2" class="choice">
+<input class="choice__input choice__input--radio" type="radio" name="medical-long-additional_rx_drug_coverage" id="id_medical-long-additional_rx_drug_coverage_2" value="True" aria-describedby="id_medical-long-additional_rx_drug_coverage_0__errors">
+<div class="choice__button" role="radio"></div>
+<span class="choice__label">Yes</span>
+</label>
+<label for="id_medical-long-additional_rx_drug_coverage_3" class="choice">
+<input class="choice__input choice__input--radio" type="radio" name="medical-long-additional_rx_drug_coverage" id="id_medical-long-additional_rx_drug_coverage_3" value="False" aria-describedby="id_medical-long-additional_rx_drug_coverage_0__errors">
+<div class="choice__button" role="radio"></div>
+<span class="choice__label">No</span>
+</label>
+</div>
+</fieldset>
+</div>
+</div>
+<div data-conditional-field-name="medical-long-additional_rx_drug_coverage" data-conditional-field-value="true" hidden="">
+<div class="enrollment__field__additional-coverage-name enrollment__field-one">
+<div class="form-group type-TextInput medical-long-additional_rx_drug_coverage_name-wrapper " hidden="">
+<label for="id_medical-long-additional_rx_drug_coverage_name" class="control-label">Name of other coverage</label>
+<input type="text" name="medical-long-additional_rx_drug_coverage_name" maxlength="255" class="form-control" aria-describedby="id_medical-long-additional_rx_drug_coverage_name__errors id_medical-long-additional_rx_drug_coverage_name__help-text" id="id_medical-long-additional_rx_drug_coverage_name" disabled="">
+</div>
+</div>
+<div class="enrollment__field__additional-coverage-other enrollment__field-one">
+<div class="enrollment__field__additional-coverage-id">
+<div class="form-group type-TextInput medical-long-additional_rx_drug_coverage_id-wrapper " hidden="">
+<label for="id_medical-long-additional_rx_drug_coverage_id" class="control-label">ID # for this coverage</label>
+<input type="text" name="medical-long-additional_rx_drug_coverage_id" maxlength="255" class="form-control" aria-describedby="id_medical-long-additional_rx_drug_coverage_id__errors id_medical-long-additional_rx_drug_coverage_id__help-text" id="id_medical-long-additional_rx_drug_coverage_id" disabled="">
+</div>
+</div>
+<div class="enrollment__field__additional-coverage-group-num">
+<div class="form-group type-TextInput medical-long-additional_rx_drug_coverage_group_id-wrapper " hidden="">
+<label for="id_medical-long-additional_rx_drug_coverage_group_id" class="control-label">Group # for this coverage</label>
+<input type="text" name="medical-long-additional_rx_drug_coverage_group_id" maxlength="255" class="form-control" aria-describedby="id_medical-long-additional_rx_drug_coverage_group_id__errors id_medical-long-additional_rx_drug_coverage_group_id__help-text" id="id_medical-long-additional_rx_drug_coverage_group_id" disabled="">
+</div>
+</div>
+</div>
+</div>
+<div class="enrollment__field__resident-long-term-facility enrollment__field-one">
+<div class="form-group type-RadioSelect medical-long-coordination_of_benefits_ltc-wrapper ">
+<fieldset aria-describedby="id_medical-long-coordination_of_benefits_ltc_0__help-text">
+<legend class="enrollment__label control-label">
+Are you a resident in a long-term care facility, such as a nursing home?
+</legend>
+<div class="
+              choice__list
+              
+                choice__list--short
+              
+            ">
+<label for="id_medical-long-coordination_of_benefits_ltc_2" class="choice">
+<input class="choice__input choice__input--radio" type="radio" name="medical-long-coordination_of_benefits_ltc" id="id_medical-long-coordination_of_benefits_ltc_2" value="True" aria-describedby="id_medical-long-coordination_of_benefits_ltc_0__errors">
+<div class="choice__button" role="radio"></div>
+<span class="choice__label">Yes</span>
+</label>
+<label for="id_medical-long-coordination_of_benefits_ltc_3" class="choice">
+<input class="choice__input choice__input--radio" type="radio" name="medical-long-coordination_of_benefits_ltc" id="id_medical-long-coordination_of_benefits_ltc_3" value="False" aria-describedby="id_medical-long-coordination_of_benefits_ltc_0__errors">
+<div class="choice__button" role="radio"></div>
+<span class="choice__label">No</span>
+</label>
+</div>
+</fieldset>
+</div>
+</div>
+<div data-conditional-field-name="medical-long-coordination_of_benefits_ltc" data-conditional-field-value="true" hidden="">
+<div class="enrollment__field__resident-long-term-facility-name enrollment__field-one">
+<div class="form-group type-TextInput medical-long-ltc_facility_name-wrapper " hidden="">
+<label for="id_medical-long-ltc_facility_name" class="control-label">Name of Institution</label>
+<input type="text" name="medical-long-ltc_facility_name" maxlength="255" class="form-control" aria-describedby="id_medical-long-ltc_facility_name__errors id_medical-long-ltc_facility_name__help-text" id="id_medical-long-ltc_facility_name" disabled="">
+</div>
+</div>
+<div class="enrollment__field__resident-long-term-facility-address enrollment__field-one">
+<div class="form-group type-TextInput medical-long-ltc_address_1-wrapper " hidden="">
+<label for="id_medical-long-ltc_address_1" class="control-label">Street address</label>
+<input type="text" name="medical-long-ltc_address_1" maxlength="255" class="form-control" aria-describedby="id_medical-long-ltc_address_1__errors id_medical-long-ltc_address_1__help-text" id="id_medical-long-ltc_address_1" disabled="">
+</div>
+</div>
+<div class="enrollment__field__resident-long-term-facility-city-state-phone enrollment__field-three-one-two">
+<div class="enrollment__field__resident-long-term-facility-city">
+<div class="form-group type-TextInput medical-long-ltc_city-wrapper " hidden="">
+<label for="id_medical-long-ltc_city" class="control-label">City</label>
+<input type="text" name="medical-long-ltc_city" maxlength="255" class="form-control" aria-describedby="id_medical-long-ltc_city__errors id_medical-long-ltc_city__help-text" id="id_medical-long-ltc_city" disabled="">
+</div>
+</div>
+<div class="enrollment__field__resident-long-term-facility-state">
+<div class="form-group type-Select medical-long-ltc_state-wrapper " hidden="">
+<label for="id_medical-long-ltc_state" class="control-label">State</label>
+<select name="medical-long-ltc_state" class="form-control" aria-describedby="id_medical-long-ltc_state__errors id_medical-long-ltc_state__help-text" id="id_medical-long-ltc_state" disabled="">
+<option value="" selected="">Select state</option>
+<option value="AK">AK</option>
+<option value="AL">AL</option>
+<option value="AR">AR</option>
+<option value="AZ">AZ</option>
+<option value="CA">CA</option>
+<option value="CO">CO</option>
+<option value="CT">CT</option>
+<option value="DC">DC</option>
+<option value="DE">DE</option>
+<option value="FL">FL</option>
+<option value="GA">GA</option>
+<option value="HI">HI</option>
+<option value="IA">IA</option>
+<option value="ID">ID</option>
+<option value="IL">IL</option>
+<option value="IN">IN</option>
+<option value="KS">KS</option>
+<option value="KY">KY</option>
+<option value="LA">LA</option>
+<option value="MA">MA</option>
+<option value="MD">MD</option>
+<option value="ME">ME</option>
+<option value="MI">MI</option>
+<option value="MN">MN</option>
+<option value="MO">MO</option>
+<option value="MS">MS</option>
+<option value="MT">MT</option>
+<option value="NC">NC</option>
+<option value="ND">ND</option>
+<option value="NE">NE</option>
+<option value="NH">NH</option>
+<option value="NJ">NJ</option>
+<option value="NM">NM</option>
+<option value="NV">NV</option>
+<option value="NY">NY</option>
+<option value="OH">OH</option>
+<option value="OK">OK</option>
+<option value="OR">OR</option>
+<option value="PA">PA</option>
+<option value="RI">RI</option>
+<option value="SC">SC</option>
+<option value="SD">SD</option>
+<option value="TN">TN</option>
+<option value="TX">TX</option>
+<option value="UT">UT</option>
+<option value="VA">VA</option>
+<option value="VT">VT</option>
+<option value="WA">WA</option>
+<option value="WI">WI</option>
+<option value="WV">WV</option>
+<option value="WY">WY</option>
+</select>
+</div>
+</div>
+<div class="enrollment__field__resident-long-term-facility-phone-num">
+<div class="form-group type-TextInput medical-long-ltc_phone-wrapper " hidden="">
+<label for="id_medical-long-ltc_phone" class="control-label">Phone Number</label>
+<input type="text" name="medical-long-ltc_phone" placeholder="555-555-5555" maxlength="20" class="form-control" aria-describedby="id_medical-long-ltc_phone__errors id_medical-long-ltc_phone__help-text" id="id_medical-long-ltc_phone" disabled="">
+</div>
+</div>
+</div>
+</div>
+<div class="enrollment__field__medicaid-enrollment enrollment__field-one">
+<div class="form-group type-RadioSelect medical-long-medicaid_enrollment-wrapper ">
+<fieldset aria-describedby="id_medical-long-medicaid_enrollment_0__help-text">
+<legend class="enrollment__label control-label">
+Are you enrolled in your state Medicaid program?
+</legend>
+<div class="
+              choice__list
+              
+                choice__list--short
+              
+            ">
+<label for="id_medical-long-medicaid_enrollment_2" class="choice">
+<input class="choice__input choice__input--radio" type="radio" name="medical-long-medicaid_enrollment" id="id_medical-long-medicaid_enrollment_2" value="True" aria-describedby="id_medical-long-medicaid_enrollment_0__errors">
+<div class="choice__button" role="radio"></div>
+<span class="choice__label">Yes</span>
+</label>
+<label for="id_medical-long-medicaid_enrollment_3" class="choice">
+<input class="choice__input choice__input--radio" type="radio" name="medical-long-medicaid_enrollment" id="id_medical-long-medicaid_enrollment_3" value="False" aria-describedby="id_medical-long-medicaid_enrollment_0__errors">
+<div class="choice__button" role="radio"></div>
+<span class="choice__label">No</span>
+</label>
+</div>
+</fieldset>
+</div>
+</div>
+<div data-conditional-field-name="medical-long-medicaid_enrollment" data-conditional-field-value="true" hidden="">
+<div class="enrollment__field__medicaid-num enrollment__field-one">
+<div class="form-group type-TextInput medical-long-medicaid_id-wrapper " hidden="">
+<label for="id_medical-long-medicaid_id" class="control-label">Medicaid number</label>
+<input type="text" name="medical-long-medicaid_id" placeholder="00000000" maxlength="20" class="form-control" aria-describedby="id_medical-long-medicaid_id__errors id_medical-long-medicaid_id__help-text" id="id_medical-long-medicaid_id" disabled="">
+</div>
+</div>
+</div>
+<div class="enrollment__field__spouse-employment enrollment__field-one">
+<div class="form-group type-RadioSelect medical-long-employment_information-wrapper ">
+<fieldset aria-describedby="id_medical-long-employment_information_0__help-text">
+<legend class="enrollment__label control-label">
+Do you or your spouse work?
+</legend>
+<div class="
+              choice__list
+              
+                choice__list--short
+              
+            ">
+<label for="id_medical-long-employment_information_2" class="choice">
+<input class="choice__input choice__input--radio" type="radio" name="medical-long-employment_information" id="id_medical-long-employment_information_2" value="True" aria-describedby="id_medical-long-employment_information_0__errors">
+<div class="choice__button" role="radio"></div>
+<span class="choice__label">Yes</span>
+</label>
+<label for="id_medical-long-employment_information_3" class="choice">
+<input class="choice__input choice__input--radio" type="radio" name="medical-long-employment_information" id="id_medical-long-employment_information_3" value="False" aria-describedby="id_medical-long-employment_information_0__errors">
+<div class="choice__button" role="radio"></div>
+<span class="choice__label">No</span>
+</label>
+</div>
+</fieldset>
+</div>
+</div>
+<input id="wizard-next" type="submit" class="btn btn-lg btn-block btn-primary" value="Continue">
+</div>
+<div>
+<button id="wizard-back" name="wizard_goto_step" class="btn btn-link enrollment__back-link" type="submit" value="start">
+<span class="fa fa-arrow-left"></span>Back
+</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="app.js"></script>
+<script>
+var next_page = "payment.html"
+var prev_page = "contact-long.html"
+var form_name = "medical-long"
+
+$( document ).ready(function() {	
+	back(prev_page);
+	next(next_page, form_name);
+	restoreForm(form_name);
+});
+</script>
+</body>
+</html>

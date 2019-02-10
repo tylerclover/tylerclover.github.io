@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha256-NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.cloverhealth.com/assets/bundles/app_css.0afa50ee6e0464f22218.css">
+</head>
+<body>
+
+<div class="container">
+<div class="enrollment__header">
+<h1 class="h1 text-center">Enroll with Clover</h1>
+<div class="step-indicator">
+<ol class="step-indicator__list">
+<li class="
+        step-indicator__item
+        
+          step-indicator__item--active
+        
+      ">
+<div class="step-indicator__number">
+1
+</div>
+<div class="step-indicator__name">Eligibility</div>
+</li>
+<li class="
+        step-indicator__item
+        
+      ">
+<div class="step-indicator__number">
+2
+</div>
+<div class="step-indicator__name">Basic info</div>
+</li>
+<li class="
+        step-indicator__item
+        
+      ">
+<div class="step-indicator__number">
+3
+</div>
+<div class="step-indicator__name">Contact</div>
+</li>
+<li class="
+        step-indicator__item
+        
+      ">
+<div class="step-indicator__number">
+4
+</div>
+<div class="step-indicator__name">Medicare</div>
+</li>
+<li class="
+        step-indicator__item
+        
+      ">
+<div class="step-indicator__number">
+5
+</div>
+<div class="step-indicator__name">Payment</div>
+</li>
+<li class="
+        step-indicator__item
+        
+      ">
+<div class="step-indicator__number">
+6
+</div>
+<div class="step-indicator__name">Read &amp; sign</div>
+</li>
+<li class="
+        step-indicator__item
+        
+      ">
+<div class="step-indicator__number">
+7
+</div>
+<div class="step-indicator__name">Review</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="enrollment__content">
+<form action="" method="post" novalidate="">
+<input type="hidden" name="csrfmiddlewaretoken" value="9u0693SCXxOUhK3BhNrFiJLZBS8cclC2hu9oRsM8UanrGOWggjc8nTtNgK06vKfz">
+<input type="hidden" name="enrollment_form_wizard_view-current_step" value="start" id="id_enrollment_form_wizard_view-current_step">
+<input type="hidden" name="enrollment-plan_info" data-plan-year="2019" data-plan-state="NJ">
+<div class="enrollment__form-order">
+<div>
+<h2 class="h2">
+You’ve selected Clover Health Choice Value PPO 2019.
+</h2>
+<p>
+A flexible plan with the same low copays in- or out-of-network. Best for people who receive a low-income subsidy.
+</p>
+<p>
+If it’s not what you wanted, go back to <a href="/plans">select another plan</a>.
+</p>
+<hr>
+<h2 class="h2">Before we get started, here are a few things you’ll need:</h2>
+<ul class="enrollment__checklist">
+<li>Medicare card</li>
+<li>Mailing and billing address</li>
+<li>Primary physician information</li>
+</ul>
+<p>
+After you submit this enrollment form, we will send you an acceptance or denial notice. If you are approved by CMS, you will be enrolled in the Clover Health Choice Value PPO Plan.
+</p>
+<input id="wizard-next" type="submit" class="btn btn-lg btn-block btn-primary" value="Continue">
+</div>
+</div>
+</form>
+</div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script>
+$( document ).ready(function() {
+    $('#wizard-next').click(function(e) {
+	  e.preventDefault();	  
+	  window.location = "eligibility.html"	  
+	});
+});
+</script>
+</body>
+</html>
