@@ -29,8 +29,16 @@ function back(loc) {
 function next(loc, form_name) {
     $('#wizard-next').click(function(e) {
 	  e.preventDefault();	  
+
+	  // Check enrollment type
+	  form_data = $( "form" ).serializeArray()
+	  if(form_data[4].name == "eligibility-eligibility_is_current_member" & form_data[4].value == "True")
+	  	sessionStorage.setItem("short", true);
+
 	  form_data = $( "form" ).serialize()
 	  sessionStorage.setItem(form_name, form_data);	 
 	  window.location = loc  
 	});
 }
+
+function check_type()
