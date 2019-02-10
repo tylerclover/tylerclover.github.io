@@ -427,7 +427,7 @@ Please select a premium payment option
 <select name="preview-short-payment_choice" class="form-control" aria-describedby="id_preview-short-payment_choice__errors id_preview-short-payment_choice__help-text" id="id_preview-short-payment_choice">
 <option value="automatic_deduction">Automatic deduction from Social Security/Railroad Retirement Board (RRB)</option>
 <option value="monthly_eft">Electronic funds transfer (EFT) from your bank account</option>
-<option value="get_a_bill" selected="">Get a bill each month</option>
+<option value="get_a_bill">Get a bill each month</option>
 </select>
 </div>
 </div>
@@ -551,7 +551,7 @@ I understand that if I intentionally provide false information on this form, I w
 <div class="enrollment__field__signature-date">
 <div class="form-group type-TextInput preview-short-applicant_signature_date-wrapper ">
 <label for="id_preview-short-applicant_signature_date" class="control-label">Today's date</label>
-<input type="hidden" name="preview-short-applicant_signature_date" value="" class="enrollment__datepicker form-control flatpickr-input" placeholder="MM/DD/YYYY" data-date-start-date="01/01/2018" data-date-end-date="12/31/2021" data-date-today-highlight="true" data-date-today-btn="linked" aria-describedby="id_preview-short-applicant_signature_date__errors id_preview-short-applicant_signature_date__help-text" required="" id="id_preview-short-applicant_signature_date"><input class="enrollment__datepicker form-control flatpickr-input form-control input" placeholder="MM/DD/YYYY" required="" tabindex="0" type="text">
+<input name="preview-short-applicant_signature_date" value="" class="enrollment__datepicker form-control flatpickr-input" placeholder="MM/DD/YYYY" data-date-start-date="01/01/2018" data-date-end-date="12/31/2021" data-date-today-highlight="true" data-date-today-btn="linked" aria-describedby="id_preview-short-applicant_signature_date__errors id_preview-short-applicant_signature_date__help-text" required="" id="id_preview-short-applicant_signature_date">
 </div>
 </div>
 </div>
@@ -626,10 +626,10 @@ Please note that by completing this online enrollment process, you will send an 
 var next_page = "finish.html"
 var prev_page = "signature.html"
 
-$( document ).ready(function() {	
-	back(prev_page);
-	next(next_page);
-	restoreForm();
+$( document ).ready(function() {  
+  back(prev_page);
+  next(next_page);
+  restoreForm();
 });
 </script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
