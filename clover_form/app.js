@@ -27,7 +27,8 @@ function next(loc, form_name) {
 
 	  // Check enrollment type
 	  form_data = $( "form" ).serializeArray()
-	  if(form_data[4].name == "eligibility-eligibility_is_current_member" & form_data[4].value == "True")
+	  if(typeof form_data[4] != 'undefined')
+	  	if(form_data[4].name == "eligibility-eligibility_is_current_member" & form_data[4].value == "True")
 	  	sessionStorage.setItem("short", true);
 
 	  form_data = $( "form" ).serialize()
