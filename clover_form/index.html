@@ -113,16 +113,15 @@ After you submit this enrollment form, we will send you an acceptance or denial 
 </form>
 </div>
 </div>
-<script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="app.js"></script>
 <script>
-$( document ).ready(function() {
-    $('#wizard-next').click(function(e) {
-	  e.preventDefault();	  
-	  window.location = "eligibility"	  
-	});
+var next_page = "eligibility"
+
+$( document ).ready(function() {  
+  next(next_page);
 });
 </script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
