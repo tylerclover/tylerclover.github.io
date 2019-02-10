@@ -36,3 +36,33 @@ function next(loc, form_name) {
 	  window.location = loc  
 	});
 }
+
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+}
+
+function injectScript(src, id) {
+    return new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = src;
+        script.id = id;
+        script.addEventListener('load', resolve);
+        script.addEventListener('error', () => reject('Error loading script.'));
+        script.addEventListener('abort', () => reject('Script loading aborted.'));
+        document.head.appendChild(script);
+    });
+}
+
+if(getUrlVars()["assist"] == "1"){
+  injectScript('https://static.zdassets.com/ekr/snippet.js?key=1a86e8b3-8486-4af3-a9ee-dd35b2139c0d', "ze-snippet")
+    .then(() => {
+        console.log('Script loaded!');
+    }).catch(error => {
+        console.log(error);
+    });
+}
