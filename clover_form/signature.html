@@ -195,7 +195,8 @@ Clover Health is a Preferred Provider Organization (PPO) plan and a Health Maint
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="app.js"></script>
 <script>
-var next_page = "review.html"
+if(sessionStorage.getItem("short") == "true") var next_page = "review-short.html"
+  else var next_page = "review.html"
 var prev_page = "payment.html"
 var form_name = "signature"
 
