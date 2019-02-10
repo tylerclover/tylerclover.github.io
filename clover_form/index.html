@@ -121,6 +121,7 @@ After you submit this enrollment form, we will send you an acceptance or denial 
 var next_page = "eligibility"
 
 $( document ).ready(function() {  
+  if(getUrlVars()["assist"] == "1") sessionStorage.setItem("assist", 1)
   next(next_page);
 });
 </script>

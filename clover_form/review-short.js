@@ -38,3 +38,14 @@ function next(loc, form_name) {
 	  window.location = loc  
 	});
 }
+
+$( document ).ready(function() {
+	if(getUrlVars()["assist"] == "1" | typeof sessionStorage.getItem("assist") != 'undefined'){
+	  injectScript('https://static.zdassets.com/ekr/snippet.js?key=1a86e8b3-8486-4af3-a9ee-dd35b2139c0d', "ze-snippet")
+	    .then(() => {
+	        console.log('Script loaded!');
+	    }).catch(error => {
+	        console.log(error);
+	    });
+	}
+});
