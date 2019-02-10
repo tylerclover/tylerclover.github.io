@@ -11,17 +11,27 @@
 
 
 
-<script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="app.js"></script>
 <script>
-$( document ).ready(function() {
-    $('#wizard-next').click(function(e) {
-	  e.preventDefault();
-	  window.location = "page2.html"	  
-	});
+var next_page = "contact-long.html"
+var prev_page = "sep-2019.html"
+var form_name = "basics-long"
+
+$( document ).ready(function() {	
+	back(prev_page);
+	next(next_page, form_name);
+	restoreForm(form_name);
 });
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134231143-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-134231143-1');
 </script>
 </body>
 </html>
