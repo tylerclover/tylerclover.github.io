@@ -39,7 +39,26 @@ function next(loc, form_name) {
 	});
 }
 
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+}
 
+function injectScript(src, id) {
+    return new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = src;
+        script.id = id;
+        script.addEventListener('load', resolve);
+        script.addEventListener('error', () => reject('Error loading script.'));
+        script.addEventListener('abort', () => reject('Script loading aborted.'));
+        document.head.appendChild(script);
+    });
+}
 
 $( document ).ready(function() {
 	if(getUrlVars()["assist"] == "1" | typeof sessionStorage.getItem("assist") != 'undefined'){
