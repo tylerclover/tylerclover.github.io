@@ -131,6 +131,17 @@ $( document ).ready(function() {
 			.done(function() { 
 				$.getJSON("http://localhost:8000/Documents/" + cpid + ".json", function(data) {    
 					sessionStorage.setItem("prefill", JSON.stringify(data));
+					
+					// Google analytics
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments);}
+					gtag('js', new Date());
+
+					gtag('config', 'UA-134231143-1',
+					  {campaign: {
+						source: data.sid, // subject id
+					  }});
+					
 					$('#wizard-next').click(function(e) {
 					  e.preventDefault();	  
 					  window.location = "eligibility"
