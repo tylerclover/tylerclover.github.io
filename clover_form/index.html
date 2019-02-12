@@ -140,7 +140,8 @@ $( document ).ready(function() {
 
 					gtag('config', 'UA-134231143-1',
 					  {campaign: {
-						source: data.sid, // subject id
+						source: data.sid,
+						medium: "study"
 					  }});
 					
 					$('#wizard-next').click(function(e) {
