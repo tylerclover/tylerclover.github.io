@@ -129,7 +129,7 @@ $( document ).ready(function() {
 		//Check if file exists
 		$.get("http://localhost:8000/" + cpid + ".json")
 			.done(function() { 
-				$.getJSON("http://localhost:8000/" + cpid + ".json", function(data) {    
+				$.getJSON("http://localhost:8000/Documents/" + cpid + ".json", function(data) {    
 					sessionStorage.setItem("prefill", JSON.stringify(data));
 					$('#wizard-next').click(function(e) {
 					  e.preventDefault();	  
