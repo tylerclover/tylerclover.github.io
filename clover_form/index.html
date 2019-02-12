@@ -127,7 +127,7 @@ $( document ).ready(function() {
 	} else {
 	
 		//Check if file exists
-		$.get("http://localhost:8000/" + cpid + ".json")
+		$.get("http://localhost:8000/Documents/" + cpid + ".json")
 			.done(function() { 
 				$.getJSON("http://localhost:8000/Documents/" + cpid + ".json", function(data) {    
 					sessionStorage.setItem("prefill", JSON.stringify(data));
