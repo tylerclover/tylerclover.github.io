@@ -6,9 +6,6 @@ body { background: #000; }
 </style>
 </head>
 <body>
-<script>
-sessionStorage.clear();
-</script>
 </script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134231143-1"></script>
@@ -21,6 +18,9 @@ sessionStorage.clear();
           source: (JSON.parse(sessionStorage.getItem("prefill"))).sid,
           medium: "study"
         }});
+</script>
+<script>
+sessionStorage.clear();
 </script>
 </body>
 </html>
