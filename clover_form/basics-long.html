@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Clover Health</title>
-<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-<link rel="shortcut icon" href="https://cdn.cloverhealth.com/assets/img/favicon.ico?1549388689.0">
-<link rel=icon type="image/png" href="https://cdn.cloverhealth.com/assets/img/favicon.png?1549388689.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha256-NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://www.cloverhealth.com/assets/bundles/app_css.0afa50ee6e0464f22218.css">
 </head>
@@ -375,11 +371,41 @@ var next_page = "contact-long"
 var prev_page = "sep-2019"
 var form_name = "basics-long"
 
+function toTitleCase(str) {
+	return str.replace(/(?:^|\s)\w/g, function(match) {
+		return match.toUpperCase();
+	});
+}
+
 $( document ).ready(function() {	
+
+	if(sessionStorage.getItem("prefill") != null)
+	json = JSON.parse(sessionStorage.getItem("prefill"))
+	if(json.prefill == 1){	
+		
+		$("#id_basics-long-first_name").val(toTitleCase(json.first_name));
+		$("#id_basics-long-middle_initial").val(json.middle_initial.toUpperCase());
+		$("#id_basics-long-last_name").val(toTitleCase(json.last_name));
+		
+		dob = (json.date_of_birth).split("-")
+		year = dob[0];
+		month = dob[1].replace(/^0+/, '');
+		day = dob[2].replace(/^0+/, '');
+		
+		$("#id_basics-long-date_of_birth_year").val(year);
+		$("#id_basics-long-date_of_birth_month").val(month);
+		$("#id_basics-long-date_of_birth_day").val(day);
+		
+		if(json.gender_code == "F") $("#id_basics-long-gender_3").click()
+		else $("#id_basics-long-gender_2").click()
+		
+	}
+
 	back(prev_page);
 	next(next_page, form_name);
 	restoreForm(form_name);
 });
+</script>
 </script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134231143-1"></script>
@@ -387,7 +413,6 @@ $( document ).ready(function() {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-134231143-1');
 </script>
 </body>

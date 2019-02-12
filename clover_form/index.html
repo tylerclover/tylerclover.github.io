@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Clover Health</title>
-<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-<link rel="shortcut icon" href="https://cdn.cloverhealth.com/assets/img/favicon.ico?1549388689.0">
-<link rel=icon type="image/png" href="https://cdn.cloverhealth.com/assets/img/favicon.png?1549388689.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha256-NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://www.cloverhealth.com/assets/bundles/app_css.0afa50ee6e0464f22218.css">
 </head>
@@ -115,16 +111,36 @@ After you submit this enrollment form, we will send you an acceptance or denial 
 </form>
 </div>
 </div>
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script src="app.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
 <script>
-var next_page = "eligibility"
+$( document ).ready(function() {
 
-$( document ).ready(function() {  
-  if(getUrlVars()["assist"] == "1") sessionStorage.setItem("assist", 1)
-  next(next_page);
+	var cpid = prompt("Please enter the participant's CPID");
+	var d = ""
+	
+	if (cpid == null || cpid == "") {
+		alert("Invalid CPID. Please try again.");
+		location.reload();
+	} else {
+	
+		//Check if file exists
+		$.get("http://localhost:8000/" + cpid + ".json")
+			.done(function() { 
+				$.getJSON("http://localhost:8000/" + cpid + ".json", function(data) {    
+					sessionStorage.setItem("prefill", JSON.stringify(data));
+					$('#wizard-next').click(function(e) {
+					  e.preventDefault();	  
+					  window.location = "eligibility"
+					});
+				});
+			}).fail(function() { 
+				alert("Invalid CPID. Please try again.");
+				location.reload();
+			})	
+	}
 });
 </script>
 <!-- Global site tag (gtag.js) - Google Analytics -->

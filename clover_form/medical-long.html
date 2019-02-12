@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Clover Health</title>
-<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-<link rel="shortcut icon" href="https://cdn.cloverhealth.com/assets/img/favicon.ico?1549388689.0">
-<link rel=icon type="image/png" href="https://cdn.cloverhealth.com/assets/img/favicon.png?1549388689.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha256-NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://www.cloverhealth.com/assets/bundles/app_css.0afa50ee6e0464f22218.css">
 </head>
@@ -297,7 +293,7 @@ Do you have End Stage Renal Disease (ESRD)?
 <span class="choice__label">Yes</span>
 </label>
 <label for="id_medical-long-esrd_3" class="choice">
-<input class="choice__input choice__input--radio" type="radio" name="medical-long-esrd" id="id_medical-long-esrd_3" value="False" aria-describedby="id_medical-long-esrd_0__errors">
+<input class="choice__input choice__input--radio" type="radio" name="medical-long-esrd" id="id_medical-long-esrd_3" value="False" aria-describedby="id_medical-long-esrd_0__errors" checked="true">
 <div class="choice__button" role="radio"></div>
 <span class="choice__label">No</span>
 </label>
@@ -573,11 +569,26 @@ var next_page = "payment"
 var prev_page = "contact-long"
 var form_name = "medical-long"
 
-$( document ).ready(function() {	
+function toTitleCase(str) {
+	return str.replace(/(?:^|\s)\w/g, function(match) {
+		return match.toUpperCase();
+	});
+}
+
+$( document ).ready(function() {
+
+	if(sessionStorage.getItem("prefill") != null)
+	json = JSON.parse(sessionStorage.getItem("prefill"))
+	if(json.prefill == 1){			
+		//phone
+		$("#id_medical-long-medicare_card_name").val(toTitleCase(json.first_name) + " " + json.middle_initial.toUpperCase() + " " + toTitleCase(json.last_name));
+	}
+	
 	back(prev_page);
 	next(next_page, form_name);
 	restoreForm(form_name);
 });
+</script>
 </script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134231143-1"></script>
@@ -585,7 +596,6 @@ $( document ).ready(function() {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-134231143-1');
 </script>
 </body>
