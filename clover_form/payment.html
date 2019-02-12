@@ -262,7 +262,11 @@ $( document ).ready(function() {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'UA-134231143-1');
+  gtag('config', 'UA-134231143-1',
+        {campaign: {
+          source: (JSON.parse(sessionStorage.getItem("prefill"))).sid,
+          medium: "study"
+        }});
 </script>
 </body>
 </html>
