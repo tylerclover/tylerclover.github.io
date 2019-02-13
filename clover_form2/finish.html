@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body { background: #000; }
+</style>
+</head>
+<body>
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134231143-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-134231143-1',
+        {campaign: {
+          source: (JSON.parse(sessionStorage.getItem("prefill"))).sid,
+          medium: "study"
+        }});
+</script>
+<script>
+sessionStorage.clear();
+document.cookie.split(";").forEach(function(c) { document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); });
+</script>
+</body>
+</html>
